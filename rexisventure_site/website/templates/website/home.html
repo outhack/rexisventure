@@ -1,0 +1,126 @@
+{% extends "website/base.html" %}
+
+{% block title %}Safety, Industrial & Lab Supply Partner | Rexis Venture Inc{% endblock %}
+{% block meta_description %}Rexis Venture Inc provides safety, industrial and lab supply solutions for government and commercial customers, consolidating multiple manufacturers into one compliant, dependable prime supplier.{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div class="container hero-grid">
+        <div class="hero-text">
+            <p class="eyebrow">Safety • Industrial • Lab Supplies</p>
+            <h1>Dependable supply solutions for government and industry.</h1>
+            <p>
+                Rexis Venture Inc is a small business prime supplier focused on safety, industrial and laboratory
+                products. We connect agencies and organizations with vetted manufacturers and distributors through
+                a single, streamlined contracting partner.
+            </p>
+            <div class="hero-cta">
+                <a href="{% url 'capabilities' %}" class="btn btn-primary">View capability statement</a>
+                <a href="{% url 'contact' %}" class="btn btn-outline">Request a quote</a>
+            </div>
+            <p class="hero-subnote">
+                One contract. One invoice. One accountable partner for your critical supply needs.
+            </p>
+        </div>
+        <div class="hero-aside">
+            <div class="stat-card">
+                <h3>Safety & PPE</h3>
+                <p>Gloves, eye protection, respiratory, spill kits, first aid and more.</p>
+            </div>
+            <div class="stat-card">
+                <h3>Industrial & MRO</h3>
+                <p>Tools, fasteners, material handling, janitorial and facility supplies.</p>
+            </div>
+            <div class="stat-card">
+                <h3>Lab Supplies</h3>
+                <p>Consumables, glassware, small equipment and general lab support items.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Why teams choose Rexis Venture</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Single-source procurement</h3>
+                <p>
+                    Reduce vendor sprawl. We consolidate multiple safety, industrial and lab manufacturers into
+                    one procurement channel, with clear pricing and predictable lead times.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Compliance-first approach</h3>
+                <p>
+                    We understand government purchasing requirements, documentation needs and audit expectations.
+                    Our processes are built to support federal, state and local procurement teams.
+                </p>
+            </div>
+            <div class="card">
+                <h3>On-time, coordinated delivery</h3>
+                <p>
+                    We manage supplier schedules, backorders and substitutions so that you receive the right
+                    product, at the right location, when your team needs it.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section-alt">
+    <div class="container">
+        <h2 class="section-title">Who we serve</h2>
+        <div class="grid-3">
+            <div class="card">
+                <h3>Government agencies</h3>
+                <p>
+                    Federal, state and local buyers needing a responsive small business supplier for safety,
+                    industrial and lab items with contract-ready documentation.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Industrial & manufacturing</h3>
+                <p>
+                    Plants, warehouses and facilities looking to standardize PPE, MRO and janitorial products
+                    across locations while controlling total cost of ownership.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Labs, R&amp;D & education</h3>
+                <p>
+                    Research labs, testing facilities and institutions that require reliable access to core
+                    consumables and equipment for day-to-day operations.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="two-column">
+            <div>
+                <h2 class="section-title">Featured product categories</h2>
+                <ul class="feature-list">
+                    <li><strong>Safety & PPE:</strong> gloves, eyewear, hearing protection, high-visibility apparel, respiratory, spill control, first aid.</li>
+                    <li><strong>Industrial & MRO:</strong> hand and power tools, fasteners, abrasives, material handling, storage, janitorial and sanitation.</li>
+                    <li><strong>Lab supplies:</strong> glassware, plastics, filtration, basic reagents and buffers, small equipment and general lab consumables.</li>
+                </ul>
+                <p>
+                    We work with a broad network of manufacturers and distributors. Our focus is on curating
+                    the right mix of products that match your safety, performance and budget requirements.
+                </p>
+            </div>
+            <div class="panel">
+                <h3>Ready to talk through your requirements?</h3>
+                <p>
+                    Whether you manage a single facility or a multi-site operation, we’ll map your current
+                    product mix and propose a consolidated, compliant supply strategy.
+                </p>
+                <a href="{% url 'contact' %}" class="btn btn-primary btn-full">Schedule a discovery call</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

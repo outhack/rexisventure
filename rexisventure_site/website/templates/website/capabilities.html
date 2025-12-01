@@ -1,0 +1,90 @@
+{% extends "website/base.html" %}
+
+{% block title %}Capability Statement | Rexis Venture Inc{% endblock %}
+{% block meta_description %}Capability statement for Rexis Venture Inc, a small business prime supplier of safety, industrial and lab products with a curated network of manufacturers and distributors.{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container capability-layout">
+        <div>
+            <p class="eyebrow">Capability Statement</p>
+            <h1>Rexis Venture Inc</h1>
+            <p>
+                Rexis Venture Inc is a small business prime supplier specializing in the sourcing and delivery
+                of safety, industrial and laboratory products for government and commercial clients. We combine
+                a focused supplier network with disciplined contract and vendor management.
+            </p>
+
+            <h2>Core competencies</h2>
+            <ul class="feature-list">
+                <li><strong>Safety & PPE supply:</strong> head, eye, hand, hearing and respiratory protection, spill control, first aid and facility safety items.</li>
+                <li><strong>Industrial & MRO products:</strong> tools, fasteners, abrasives, material handling, storage solutions, janitorial and sanitation supplies.</li>
+                <li><strong>Laboratory supplies:</strong> glassware, plastics, filtration, basic reagents and general-purpose lab consumables and accessories.</li>
+                <li><strong>Prime supplier & vendor management:</strong> consolidated sourcing, purchase order management, backorder coordination and substitution management.</li>
+                <li><strong>Contract & compliance support:</strong> documentation, reporting and coordination aligned with government procurement requirements.</li>
+            </ul>
+
+            <h2>Differentiators</h2>
+            <ul class="feature-list">
+                <li><strong>Niche-focused supplier network:</strong> we concentrate on safety, industrial and lab categories, allowing us to align products tightly with your operating environment.</li>
+                <li><strong>Single point of accountability:</strong> Rexis Venture serves as the prime point of contact for sourcing, order status, issue resolution and performance reporting.</li>
+                <li><strong>Agile small business:</strong> lean structure enables quick response to urgent requirements, spot buys and evolving project needs.</li>
+                <li><strong>Structured processes:</strong> standardized order management, escalation paths and communication cadence with both customers and supplier partners.</li>
+                <li><strong>Relationship-driven approach:</strong> we work to understand your facility, end users and operating constraints, not just the SKU list.</li>
+            </ul>
+        </div>
+
+        <aside class="capability-aside">
+            <div class="card">
+                <h3>Company information</h3>
+                <ul class="company-data">
+                    <li><strong>Legal name:</strong> Rexis Venture Inc</li>
+                    <li><strong>Business type:</strong> Small business </li>
+                    <!-- <li><strong>UEI:</strong> G2F1GCBEPL66</li> -->
+                    <!-- <li><strong>CAGE:</strong> 0XQ72</li> -->
+                    <li><strong>NAICS:</strong><p style="padding-left:10px;">423840 (Industrial supplies)<br/> 423450 (Medical/Dental/Lab),<br/> 423490 (Other professional equipment)</p></li>
+                    <li><strong>Address:<address style="padding-left:10px; font-weight: lighter;">184 Pleasant Valley St, <br/>Building 2, Suite 204,<br/> Methuen, MA, 01844</address></strong> </li>
+                    <li><strong>Phone:</strong><a href="tel:+19784944611">+1(978)494-4611</a></li>
+                    <li><strong>Email:</strong> vendor@RexisVenture.com</li>
+                    <li><strong>Website:</strong> www.RexisVenture.com</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Target customers</h3>
+                <ul class="feature-list small">
+                    <li>Federal agencies</li>
+                    <li>State and local government</li>
+                    <li>Industrial and manufacturing facilities</li>
+                    <li>Laboratories and research centers</li>
+                    <li>Educational institutions</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Representative experience</h3>
+                <p class="small">
+                    Use this section to highlight past performance. If you are early-stage, focus on the types of
+                    safety, industrial and lab requirements your team and supplier network are equipped to support.
+                </p>
+                <ul class="feature-list small">
+                    <li>Consolidated PPE supply programs for multi-site operations.</li>
+                    <li>Standardized janitorial and sanitation products for facilities.</li>
+                    <li>Core lab consumables provisioning for research and testing environments.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Primary contact</h3>
+                <p class="small">
+                    <!-- <strong>Name:</strong> [Your name]<br>
+                    <strong>Title:</strong> [Your title]<br> -->
+                    <strong>Email:</strong> vendor@RexisVenture.com<br>
+                    <strong>Phone:</strong> +1(978)494‑4611
+                </p>
+                <a href="{% url 'contact' %}" class="btn btn-primary btn-full">Request the one-page PDF</a>
+            </div>
+        </aside>
+    </div>
+</section>
+{% endblock %}

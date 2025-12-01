@@ -1,0 +1,38 @@
+{% extends "website/base.html" %}
+
+{% block title %}Supplier Partners | Rexis Venture Inc{% endblock %}
+{% block meta_description %}Rexis Venture Inc partners with manufacturers and distributors of safety, industrial and lab products to serve government and commercial customers.{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <p class="eyebrow">Supplier Partners</p>
+        <h1>Extend your reach into government and industry.</h1>
+        <p>
+            Rexis Venture partners with manufacturers and distributors of safety, industrial and laboratory products
+            who want to reach government and institutional customers through a focused, relationship-driven prime
+            supplier.
+        </p>
+
+        <div class="two-column">
+            <div>
+                <h2>What we offer our partners</h2>
+                <ul class="feature-list">
+                    <li><strong>Access to opportunities:</strong> we actively pursue opportunities where our partners' products are a strong fit.</li>
+                    <li><strong>Contract management:</strong> we handle government-facing documentation, compliance and invoicing.</li>
+                    <li><strong>Demand insight:</strong> visibility into customer requirements to help shape stocking and product strategy.</li>
+                    <li><strong>Long-term relationships:</strong> we aim to build durable partnerships with clear expectations and communication.</li>
+                </ul>
+            </div>
+            <div class="panel">
+                <h3>Become a supplier partner</h3>
+                <p>
+                    If your product lines align with safety, industrial or lab supply, we’d be happy to learn more
+                    about your offerings and explore partnership.
+                </p>
+                <a href="{% url 'contact' %}" class="btn btn-primary btn-full">Introduce your company</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

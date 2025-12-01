@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>{% block title %}Rexis Venture Inc | Safety, Industrial & Lab Supply Partner{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{% block meta_description %}Rexis Venture Inc is a small business prime supplier specializing in safety, industrial and lab products for government and industry.{% endblock %}">
+    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}">
+    <link rel="icon" type="image/x-icon" href="{% static 'website/img/RexisVentureIncFavIcon.png' %}">
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-container">
+        <a href="{% url 'home' %}" class="brand">
+            <span class="brand-mark">RVI</span>
+            <span class="brand-text">
+                <span class="brand-name">Rexis Venture Inc</span>
+                <span class="brand-tagline">Safety • Industrial • Lab Supply</span>
+            </span>
+        </a>
+        <nav class="main-nav">
+            <a href="{% url 'capabilities' %}">Capabilities</a>
+            <a href="{% url 'industries' %}">Industries</a>
+            <a href="{% url 'government' %}">Government</a>
+            <a href="{% url 'partners' %}">Partners</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'contact' %}" class="btn btn-primary btn-sm">Request a Quote</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        {% if messages %}
+            <div class="messages">
+                {% for message in messages %}
+                    <div class="alert {{ message.tags }}">{{ message }}</div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    </div>
+
+    {% block content %}{% endblock %}
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div>
+            <h4>Rexis Venture Inc</h4>
+            <p>Prime supplier of safety, industrial and lab products with a curated network of manufacturers and distributors.</p>
+            <p class="footer-small">
+                Small business | Safety • Industrial • Lab
+            </p>
+        </div>
+        <div>
+            <h5>Quick links</h5>
+            <ul class="footer-links">
+                <li><a href="{% url 'capabilities' %}">Capability Statement</a></li>
+                <li><a href="{% url 'government' %}">Government Contracting</a></li>
+                <li><a href="{% url 'partners' %}">Become a Supplier Partner</a></li>
+                <li><a href="{% url 'contact' %}">Contact / RFQ</a></li>
+            </ul>
+        </div>
+        <div>
+            <h5>Contact</h5>
+            <p>Email: <a href="mailto:vendor@RexisVenture.com">vendor@RexisVenture.com</a></p>
+            <p>Phone: <a href="tel:+19784944611">+1(978)494‑4611</a></p>
+            <p class="footer-small">
+                © {% now "Y" %} Rexis Venture Inc. All rights reserved.
+            </p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+            <span>© {% now "Y" %} Rexis Venture Inc. All rights reserved.</span>
+        </div>
+    </div>
+</footer>
+
+<script src="{% static 'website/js/main.js' %}"></script>
+</body>
+</html>

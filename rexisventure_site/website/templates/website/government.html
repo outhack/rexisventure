@@ -1,0 +1,52 @@
+{% extends "website/base.html" %}
+
+{% block title %}Government Contracting | Rexis Venture Inc{% endblock %}
+{% block meta_description %}Rexis Venture Inc is a small business supplier prepared to support government contracting requirements for safety, industrial and lab products.{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <p class="eyebrow">Government Contracting</p>
+        <h1>Procurement-ready supply partner.</h1>
+        <p>
+            Rexis Venture Inc is structured to support government procurement teams with clear communication,
+            compliant documentation and accountable performance on supply contracts for safety, industrial and
+            lab products.
+        </p>
+
+        <div class="two-column">
+            <div>
+                <h2>How we support contracting officers & buyers</h2>
+                <ul class="feature-list">
+                    <li><strong>Clear, complete quotations:</strong> line-item detail, manufacturer information, lead times and alternates when appropriate.</li>
+                    <li><strong>Consolidated sourcing:</strong> coordination across multiple manufacturers and distributors under one contractor.</li>
+                    <li><strong>Lifecycle support:</strong> order status updates, backorder management, substitutions and documentation as needs evolve.</li>
+                    <li><strong>Communication:</strong> defined points of contact for contracting, technical and logistics questions.</li>
+                    <li><strong>Scalable engagement:</strong> from micro-purchases to larger, ongoing supply programs.</li>
+                </ul>
+            </div>
+            <aside class="panel">
+                <h3>Key information (update as you register)</h3>
+                <ul class="feature-list small">
+                    <!-- <li><strong>UEI:</strong> G2F1GCBEPL66</li> -->
+                    <!-- <li><strong>CAGE:</strong> 0XQ72</li> -->
+                    <li><strong>Business type:</strong> Small business</li>
+                    <li><strong>NAICS:</strong> 423840, 423450, 423490</li>
+                    <li><strong>SAM status:</strong><span style="color: green; font-weight: bold;"> Active </span></li>
+                </ul>
+                <a href="{% url 'capabilities' %}" class="btn btn-outline btn-full">View capability statement</a>
+                <a href="{% url 'contact' %}" class="btn btn-primary btn-full">Request product information</a>
+            </aside>
+        </div>
+
+        <div class="section-small">
+            <h2>Simple engagement model</h2>
+            <ol class="numbered-list">
+                <li><strong>Share your requirement.</strong> Provide product lists, specifications or performance needs.</li>
+                <li><strong>We source and propose.</strong> We coordinate with our supplier network and present aligned options and pricing.</li>
+                <li><strong>We fulfill and manage.</strong> We oversee order placement, delivery coordination and any required substitutions or follow-up.</li>
+            </ol>
+        </div>
+    </div>
+</section>
+{% endblock %}

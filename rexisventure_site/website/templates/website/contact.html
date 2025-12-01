@@ -1,0 +1,61 @@
+{% extends "website/base.html" %}
+
+{% block title %}Contact & RFQ | Rexis Venture Inc{% endblock %}
+{% block meta_description %}Request a quote or talk with Rexis Venture Inc about safety, industrial and lab supply requirements for your organization.{% endblock %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h1>Tell us what you need.</h1>
+        <p>
+            Share a product list, describe your environment or outline upcoming projects. We’ll review and follow
+            up with clarifying questions or a detailed quotation.
+        </p>
+
+        <div class="two-column">
+            <div>
+                <form method="post" class="contact-form">
+                    {% csrf_token %}
+                    <div class="form-row">
+                        {{ form.full_name.label_tag }}
+                        {{ form.full_name }}
+                    </div>
+                    <div class="form-row">
+                        {{ form.email.label_tag }}
+                        {{ form.email }}
+                    </div>
+                    <div class="form-row">
+                        {{ form.phone.label_tag }}
+                        {{ form.phone }}
+                    </div>
+                    <div class="form-row">
+                        {{ form.company.label_tag }}
+                        {{ form.company }}
+                    </div>
+                    <div class="form-row">
+                        {{ form.subject.label_tag }}
+                        {{ form.subject }}
+                    </div>
+                    <div class="form-row">
+                        {{ form.message.label_tag }}
+                        {{ form.message }}
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Submit</button>
+                </form>
+            </div>
+            <div class="panel">
+                <h3>Direct contact</h3>
+                <p>
+                    <strong>Email:</strong> <a href="mailto:vendor@RexisVenture.com">vendor@RexisVenture.com</a><br>
+                    <strong>Phone:</strong> <a href="tel:+19784944611">+1(978)494‑4611</a>
+                </p>
+                <p class="small">
+                    If you prefer, you can send product lists or statements of work directly by email. We will
+                    acknowledge receipt and provide an expected response window.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
