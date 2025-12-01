@@ -1,11 +1,17 @@
-gcloud run deploy $SERVICE_NAME \           
-    --image gcr.io/$PROJECT_ID/$SERVICE_NAME \
-    --region us-central1 \
-    --platform managed \
-    --allow-unauthenticated
+~/Downloads/google-cloud-sdk/bin/gcloud init
 
 (rexis_venv) jwambugu@MacBook-Pro rexisventure % echo $SERVICE_NAME
 rexisventure
 
 (rexis_venv) jwambugu@MacBook-Pro rexisventure % echo $PROJECT_ID  
 rvi0001
+
+docker build -t gcr.io/$PROJECT_ID/$SERVICE_NAME .
+
+docker push gcr.io/$PROJECT_ID/$SERVICE_NAME
+
+gcloud run deploy $SERVICE_NAME \           
+    --image gcr.io/$PROJECT_ID/$SERVICE_NAME \
+    --region us-central1 \
+    --platform managed \
+    --allow-unauthenticated
